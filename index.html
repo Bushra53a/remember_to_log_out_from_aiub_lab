@@ -4,21 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Logout Reminder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet"> <!-- Robotic font -->
   <style>
     body {
       background-color: black;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
+      color: white;
     }
 
     h1 {
-      color: green;
+      font-family: 'Roboto Mono', monospace;
+      color: #00ff00;
       font-weight: bold;
       font-size: 68px;
       text-align: center;
+      font-style: italic;
+      animation: colorChange 2s infinite alternate;
+    }
+
+    @keyframes colorChange {
+      0% {
+        color: #00ff00; /* Green */
+      }
+      25% {
+        color: #ff0000; /* Red */
+      }
+      50% {
+        color: #0000ff; /* Blue */
+      }
+      75% {
+        color: #ffff00; /* Yellow */
+      }
+      100% {
+        color: #ff00ff; /* Magenta */
+      }
     }
   </style>
 </head>
